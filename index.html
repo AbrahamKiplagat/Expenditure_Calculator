@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Enter amount You Spent this Day</h1>
+  <div class="allitems">
+    <div>
+      <div class="item">
+        <p>The item you bought:</p>
+        <input id="inputItemName" type="text" placeholder="Sugar" onchange="computeAll()">
+      </div>
+      <div class="item">
+        <p>The prize of item:</p>
+        <!-- Use type="number" for numeric input -->
+        <input id="inputItemPrize" type="number" placeholder="Prize of the Item" onchange="computeAll()">
+      </div>
+      <div class="item">
+        <p>The number of Items:</p>
+        <input id="inputItemNumber" type="number" placeholder="Number of Item" onchange="computeAll()">
+      </div>
+    </div>
+    <div class="item">
+      <p>Totals</p>
+      <span style="font-family: monospace;" class="totals">Total:</span>
+    </div>
+  </div>
+  
+    <div class="allitems">
+      <div class="item">
+        <p>Enter Your budget amount:</p>
+        <input id="inputBudgetAmount" type="number" placeholder="Budget Amount" onchange="computeAll()">
+      </div>
+      <div class="item">
+        <p>The budget remainder:</p>
+        <span style="font-family: monospace;" class="budgetRemainder">Remaining:</span>
+      </div>
+    </div>
+    <!-- Expense List -->
+    
+    <div class="displayItems">
+      <p id="displayItm">The Item You Bought:</p>
+        <p id="displayTc">The Total Cost:</p>
+       <p id="displayRm">The Remaining Amount:</p>    
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

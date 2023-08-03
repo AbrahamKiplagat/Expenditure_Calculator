@@ -1,0 +1,86 @@
+.item{
+  display: flex;
+  align-items: center;
+}
+
+.item span{
+  width: 300px; 
+  height: 30px; 
+  text-align: left;
+  border-radius: 12px;
+  border: 2px solid #4a148c;
+  box-shadow: -0px -1px 7px 2px tomato;
+}
+.allitems{
+  display: flex;
+  justify-content: center;
+  border-style:solid ;
+  border-radius: 20px;
+  border-color: lime;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: row;
+}
+.displayItems{
+  display: flex;
+  justify-content: space-evenly;
+  border-style:solid ;
+  border-radius: 20px;
+  border-color: lime;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body{
+  text-align: center;
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+  background-color: #ce93d8;
+}
+input{
+  width: 200px;
+  height:30px;
+  background-color: transparent;
+  border-radius: 12px;
+  box-shadow: -0px -2px 7px 2px navy;
+  color: dodgerblue;
+}
+input::placeholder{
+  color: #212121;
+  font-style: italic;
+  text-align: center;
+}
+/* .expence{
+  display: flex;
+  justify-content: center;
+  border-style:solid ;
+  border-radius: 20px;
+  border-color: lime;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: row; 
+}*/
+.itemname{
+  margin-right: 20px;
+}
+.itemamount{
+  margin-right: 100px;
+}
+.itemamount ,img{
+  margin-left: 100px;
+  cursor: pointer;
+}
+.itemamount{
+  color: indigo;
+}
+
+#submitButton{
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  font-size: large;
+  width: auto;
+  border-radius: 4px;
+  border-color: transparent;
+}
