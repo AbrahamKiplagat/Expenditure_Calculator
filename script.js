@@ -10,6 +10,26 @@ function computeAll() {
   const displayTc = document.getElementById("displayTc");
   const displayRm = document.getElementById("displayRm");
   
+  if (inputItemNumber < 1 ) {
+    alert("Please enter a valid item number greater than zero.");
+    return;
+  }
+  if (inputItemPrize < 1 ) {
+    alert("Please enter a valid item amount greater than zero.");
+    return;
+  }
+  if (inputItemNumber > 50 ) {
+    alert("Please enter a valid item amount Lover than 50.");
+    return;
+  }
+  if (inputItemPrize > 100000 ) {
+    alert("Please enter a valid item amount Lover than 100,000.");
+    return;
+  }
+  if (inputBudgetAmount< 1 ) {
+    alert("Please enter a valid item amount greater than zero.");
+    return;
+  }
   let prize = inputItemPrize * inputItemNumber;
   let budget = inputBudgetAmount - prize;
 
@@ -17,8 +37,13 @@ function computeAll() {
   totalsElement.innerText = `Total:${prize.toFixed(2)}`;
   budgetRemainderElement.innerText = `Remaining: ${budget.toFixed(2)}`;
 
-  //Display the remarks.
-  displayItm.innerText = inputItemName
-  displayTc.innerText = prize
-  displayRm.innerText = budget
+  // Display the remarks.
+  displayItm.innerText = inputItemName;
+  displayTc.innerText = prize.toFixed(2);
+  displayRm.innerText = budget.toFixed(2);
+  
+  // If user input a trilion amount?
+  // if (inputItemNumber > 50) {
+  //   alert("Please enter a reasonable item number.");
+  // }
 }
